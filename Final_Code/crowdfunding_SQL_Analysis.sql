@@ -38,6 +38,24 @@ select * from email_contacts_remaining_goal_amount;
 -- and has the first and last name of each backer, the cf_id, company name, description, 
 -- end date of the campaign, and the remaining amount of the campaign goal as "Left of Goal". 
 
+select b.email, b.first_name, b.last_name, ca.cf_id,
+  ca.company_name, ca.description, ca.end_date, 
+  (ca.goal - ca.pledged) as left_of_goal
+into email_backers_remaining_goal_amount
+from backers as b
+join campaign as ca
+on b.cf_id = ca.cf_id
+where ca.outcome = 'live'
+order by b.last_name;
+
+
+
+
+
+
+
+
+
 
 
 -- Check the table

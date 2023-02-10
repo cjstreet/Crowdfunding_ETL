@@ -12,8 +12,7 @@ Crowdfunding dataset contains information on backers who made pledges to live pr
 * QuickDBD
 
 ## ERD
-![](crowdfunding_db_relationships.png)
-
+![png](ERD.png)
 ## ETL
 1.  Extract: Import crowdfunding.xlsx into Jupyter NB dataframe
 2.  Read the various sheets within the excel file.

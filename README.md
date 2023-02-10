@@ -15,13 +15,22 @@ Crowdfunding dataset contains information on backers who made pledges to live pr
 ![](crowdfunding_db_relationships.png)
 
 ## ETL
-1.  Extract: Import backer_info.csv into Jupyter NB dataframe
-2.  Converteach each row into a dictionary after turning the rows into dictionary values, we can organize the data by adding columns and seperating the information.
-
+1.  Extract: Import crowdfunding.xlsx into Jupyter NB dataframe
+2.  Read the various sheets within the excel file.
+3.  Get a brief summary
+4.  Inspect unique values
+5.  Split one column into two columns
+6.  Transform category and subcategory
+7.  Use comprehension lists to create category ids
+8.  Convert datatypes and date formats
+9.  Merge columns
+10.  Drop columns
+11.  Reorder columns
+12.  Export campaign data as a csv
+13.  Create the contacts dataframe -
 
 
 ### **Import the necessary libraries**
-
 
 ```python
 import pandas as pd
@@ -42,11 +51,7 @@ crowdfunding_data.sheet_names
 ```
 
 
-
-
     ['crowdfunding_info', 'contact_info']
-
-
 
 
 ```python

@@ -17,11 +17,8 @@ Crowdfunding dataset contains information on backers who made pledges to live pr
 ## ETL
 1.  Extract: Import backer_info.csv into Jupyter NB dataframe
 2.  Converteach each row into a dictionary after turning the rows into dictionary values, we can organize the data by adding columns and seperating the information.
-```
-# **Crowdfunding ETL**
 
 
-## **Transform Data**  
 
 ### **Import the necessary libraries**
 
